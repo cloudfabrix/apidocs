@@ -1,1 +1,1 @@
-api-document
+api-documents
