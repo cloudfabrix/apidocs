@@ -11,6 +11,7 @@ fi
 
 # Bundle OpenAPI specs into static ReDoc HTML
 npx redoc-cli bundle openapi-8.0.json -o openapi-8.0-static.html
+npx redoc-cli bundle openapi-8.1.json -o openapi-8.1-static.html
 npx redoc-cli bundle openapi-3.7.2.json -o openapi-3.7.2-static.html
 
 echo "Bundled OpenAPI specifications successfully."
@@ -68,6 +69,8 @@ cat > index.html <<EOL
             let specUrl = "";
             if (version === "8.0") {
                 specUrl = "./openapi-8.0.json";
+            } else if (version === "8.1") {
+                specUrl = "./openapi-8.1.json";
             } else if (version === "3.7.2") {
                 specUrl = "./openapi-3.7.2.json";
             }
@@ -85,6 +88,7 @@ cat > index.html <<EOL
         <label for="apiVersion" style="font-family: Helvetica; font-size: 1.2rem; font-weight: bold; color: #333; margin-right: 10px;">Select API Version:</label>
         <select id="apiVersion" onchange="changeVersion()">
             <option value="8.0">8.0</option>
+            <option value="8.1">8.1</option>
             <option value="3.7.2">3.7.2</option>
         </select>
     </div>
