@@ -2,7 +2,7 @@ name: Build docs
 on:
   push:
     branches:
-      - api-8.1
+      - main
 
 jobs:
   build:
