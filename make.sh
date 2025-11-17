@@ -90,9 +90,9 @@ cat > index.html <<EOL
     <div class="version-selector">
         <label for="apiVersion" style="font-family: Helvetica; font-size: 1.2rem; font-weight: bold; color: #333; margin-right: 10px;">Select API Version:</label>
         <select id="apiVersion" onchange="changeVersion()">
-            <option value="8.0">8.0</option>
-            <option value="8.1">8.1</option>
             <option value="8.1.1">8.1.1</option>
+            <option value="8.1">8.1</option>
+            <option value="8.0">8.0</option>
             <option value="3.7.2">3.7.2</option>
         </select>
     </div>
@@ -100,7 +100,7 @@ cat > index.html <<EOL
     <div id="redoc-container"></div>
     <script src="https://cdn.jsdelivr.net/npm/redoc@latest/bundles/redoc.standalone.min.js"></script>
     <script>
-        Redoc.init('./openapi-8.0.json', {}, document.getElementById('redoc-container'));
+        Redoc.init('./openapi-8.1.1.json', {}, document.getElementById('redoc-container'));
     </script>
 </body>
 </html>
