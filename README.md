@@ -3,12 +3,12 @@
 Interactive API reference for the **Fabrix.ai RDA Platform**, powered by Scalar and Docusaurus.
 
 - **Live site**: `https://cloudfabrix.github.io/apidocs/`
-- **Features**: code samples (curl, Python, Go, Ruby, JS, etc.), dark mode, version switching, try-it console.
+- **Features**: code samples (curl, Python, Go, Ruby, JS, etc.), & version switching.
 
 ## Repository layout
 
 - **OpenAPI specs**: `website/static/specs/openapi-<version>.json`
-- **Site shell**: `website/` (Docusaurus + Scalar CDN)
+- **Site shell**: `website/` (Docusaurus + Scalar)
 
 ## Prerequisites
 
