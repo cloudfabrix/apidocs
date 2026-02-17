@@ -1,0 +1,7 @@
+# Build output
+website/node_modules/
+website/build/
+website/.docusaurus/
+
+# Auto-generated version list
+website/src/api-versions.js
