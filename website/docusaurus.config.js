@@ -35,7 +35,7 @@ const config = {
           src: 'img/logo.svg',
         },
         items: [
-          { type: 'custom-apiVersionSelector', position: 'right' },
+          { type: 'custom-apiVersionSelector', position: 'left' },
         ],
       },
       footer: {
